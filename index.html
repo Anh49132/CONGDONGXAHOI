@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cộng Đồng Xã Hội</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cộng Đồng Xã Hội</h1>
+        <nav>
+            <ul>
+                <li><a href="#trang-chu">Trang chủ</a></li>
+                <li><a href="#du-an">Dự án</a></li>
+                <li><a href="#blog">Blog/Tin tức</a></li>
+                <li><a href="#dang-ky">Đăng ký tình nguyện</a></li>
+                <li><a href="#dien-dan">Diễn đàn</a></li>
+                <li><a href="#lien-he">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="trang-chu">
+        <h2>Giới thiệu</h2>
+        <p>Chúng tôi tin rằng mỗi hành động nhỏ có thể tạo nên sự thay đổi lớn. Hãy cùng chung tay xây dựng một cộng đồng tốt đẹp hơn.</p>
+    </section>
+
+    <section id="du-an">
+        <h2>Dự án xã hội</h2>
+
+        <div class="du-an">
+            <h3>Dự án "Ánh Sáng Tri Thức"</h3>
+            <p>Thư viện miễn phí cho trẻ em vùng sâu, vùng xa.</p>
+        </div>
+
+        <div class="du-an">
+            <h3>Dự án "Xanh Hơn Mỗi Ngày"</h3>
+            <p>Trồng cây và bảo vệ môi trường.</p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog/Tin tức</h2>
+
+        <div class="blog-bai">
+            <h3>Hành trình mang ánh sáng đến trẻ em vùng cao</h3>
+            <p>Chương trình "Ánh Sáng Tri Thức" giúp hàng trăm trẻ em tiếp cận với sách.</p>
+        </div>
+    </section>
+
+    <section id="dang-ky">
+        <h2>Đăng ký tình nguyện viên</h2>
+        <form id="volunteer-form">
+            <label for="volunteer-name">Họ và tên:</label>
+            <input type="text" id="volunteer-name" required>
+
+            <label for="volunteer-email">Email:</label>
+            <input type="email" id="volunteer-email" required>
+
+            <label for="volunteer-project">Chọn dự án:</label>
+            <select id="volunteer-project">
+                <option value="anh-sang-tri-thuc">Ánh Sáng Tri Thức</option>
+                <option value="xanh-hon-moi-ngay">Xanh Hơn Mỗi Ngày</option>
+            </select>
+
+            <button type="submit">Đăng ký</button>
+        </form>
+        <p id="volunteer-message"></p>
+    </section>
+
+    <section id="dien-dan">
+        <h2>Diễn đàn thảo luận</h2>
+        <div id="comment-section">
+            <h3>Bình luận</h3>
+            <div id="comments"></div>
+            <form id="comment-form">
+                <label for="username">Tên hiển thị (hoặc để trống để ẩn danh):</label>
+                <input type="text" id="username">
+                <label for="comment">Nội dung bình luận:</label>
+                <textarea id="comment" required></textarea>
+                <button type="submit">Gửi bình luận</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="lien-he">
+        <h2>Liên hệ</h2>
+        <p>Email: <a href="mailto:lienhe@congdongxahoi.com">lienhe@congdongxahoi.com</a></p>
+        <p>Số điện thoại: 0123 456 789</p>
+
+        <form id="contact-form">
+            <label for="contact-name">Họ và tên:</label>
+            <input type="text" id="contact-name" required>
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" required>
+            <label for="contact-message">Tin nhắn:</label>
+            <textarea id="contact-message" required></textarea>
+            <button type="submit">Gửi tin nhắn</button>
+        </form>
+        <p id="contact-message-status"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
